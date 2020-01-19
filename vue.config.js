@@ -98,22 +98,22 @@ module.exports = {
 
     // 已在其他地方做代理设置，不用下面的写法
     // devServer: {
-    //     host: '172.22.41.76',
-    //     port: 9090,
+    //     host: '172.22.41.62',
+    //     port: 8080,
     //     open: true, // 构建完打开打开浏览器
     //     proxy: {
     //         '/': {
     //             ws:false, // proxy websockets
-    //             target: 'http://172.22.41.80:8880',
+    //             target: 'https://douban.uieee.com',
     //             // target: 'http://houtai.suishoushuju.net:8120',
 
     //             pathRewrite: {
     //               '^/': ''
     //             }
     //           },
-    //         '/foo': {
-    //             target: '<other_url>'
-    //         }
+    //         // '/foo': {
+    //         //     target: '<other_url>'
+    //         // }
     //     }
     // }
 }

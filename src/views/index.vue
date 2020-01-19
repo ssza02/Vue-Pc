@@ -21,7 +21,7 @@
     },
     mounted() {
       this.$utils.M.baseDomFn();
-      
+      this.set_user_info();
     },
     data () {
       return {

@@ -1,3 +1,4 @@
+import {set_user_info} from './mutations-name'
 export default {
 	setDomHeight: (state, height) => {
 		state.height = height
@@ -11,7 +12,8 @@ export default {
 	// save_userInfo:(state,info)=>{
 	// 	state.userInfos = info
 	// },
-	[SET_USER_INFO]:(state, data)=> {
+	[set_user_info]:(state, data)=> {
+		console.log('set_user_info');
 		state.userInfos = data
 	},
 }

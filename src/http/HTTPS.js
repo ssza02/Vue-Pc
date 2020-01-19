@@ -4,7 +4,7 @@ import axios from 'axios';
 let loadingInstance = null;
 
 const instance = axios.create({
-	baseURL: '/bossboard/',
+	baseURL: 'https://douban.uieee.com/',
 	// timeout: 10000,
 	headers: {
 		'Content-Type': 'application/json;charset=utf-8'
@@ -104,6 +104,7 @@ function postAjax(type, url, body, params) {
 }
 //基础请求方法
 function baseAjax(type, url, body, params) {
+  console.log('baseAjax__'+url);
     switch (type) {
         case 'get':
         case 'delete':
@@ -117,8 +118,11 @@ function baseAjax(type, url, body, params) {
 
 // 输出get请求
 function s_get(url, params) {
+  console.log('s_get');
     return baseAjax('get', url, {}, params)
-        .then(res => res)
+        .then(res => {
+          console.log('res___'+res)
+        })
 }
 
 
